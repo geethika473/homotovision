@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>About <span>HematoVision</span></h2>
+            <p>Learn more about our medical diagnostic platform</p>
+        </div>
+
+        <div class="about-content fade-in delay-1">
+            <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>HematoVision is dedicated to improving hematological diagnostics through advanced AI technology. Our platform assists medical professionals in quickly and accurately identifying blood cell types.</p>
+            </div>
+            <div class="about-card">
+                <h3>Our Team</h3>
+                <p>We are a team of medical researchers, data scientists, and software engineers working together to create tools that enhance diagnostic accuracy and efficiency.</p>
+            </div>
+        </div>
+
+        <div class="about-content fade-in delay-2">
+            <div class="about-card">
+                <i class="fas fa-flask"></i>
+                <h3>Blood Cell Types</h3>
+                <p>Our system classifies four main types of white blood cells: eosinophils, lymphocytes, monocytes, and neutrophils.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>High Accuracy</h3>
+                <p>With our deep learning model, we achieve classification accuracy above 99% on test datasets.</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Medical Applications</h3>
+                <p>Our technology supports diagnosis of various conditions including infections, leukemia, and immune disorders.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

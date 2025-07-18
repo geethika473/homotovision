@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content fade-in">
+            <h1>Blood Cell <span>Classification</span></h1>
+            <p>HematoVision is an advanced platform for classifying blood cell images using deep learning. Upload microscopic images of blood cells, and our model will identify the cell type with high accuracy, assisting in medical diagnostics and research.</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('predict') }}" class="btn">Get Started</a>
+                <a href="{{ url_for('about') }}" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>How It Works</h2>
+            <p>Our AI-powered system makes blood cell classification simple and accurate</p>
+        </div>
+        <div class="about-content">
+            <div class="about-card fade-in delay-1">
+                <i class="fas fa-microscope"></i>
+                <h3>Upload Image</h3>
+                <p>Upload a clear microscopic image of blood cells for analysis.</p>
+            </div>
+            <div class="about-card fade-in delay-2">
+                <i class="fas fa-brain"></i>
+                <h3>AI Analysis</h3>
+                <p>Our deep learning model analyzes the image with 99% accuracy.</p>
+            </div>
+            <div class="about-card fade-in delay-3">
+                <i class="fas fa-diagnoses"></i>
+                <h3>Get Results</h3>
+                <p>Receive instant classification of blood cell types with confidence levels.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
